@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Jul 29 12:15:10 2024
+# Process ID: 2484
+# Log file: D:/Vedant_42209/USR/planAhead_run_2/planAhead.log
+# Journal file: D:/Vedant_42209/USR/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -3286 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/Vedant_42209/USR/pa.fromNetlist.tcl
+# create_project -name USR -dir "D:/Vedant_42209/USR/planAhead_run_2" -part xc3s250epq208-4
+ERROR: [Common 17-53] User Exception: Project already exists on disk, please use '-force' option to overwrite: 
+     D:/Vedant_42209/USR/planAhead_run_2/USR.ppr
+     D:/Vedant_42209/USR/planAhead_run_2/USR.data
+
+    while executing
+"create_project -name USR -dir "D:/Vedant_42209/USR/planAhead_run_2" -part xc3s250epq208-4"
+    (file "D:/Vedant_42209/USR/pa.fromNetlist.tcl" line 4)
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Mon Jul 29 12:24:05 2024...
+INFO: [Common 17-83] Releasing license: PlanAhead

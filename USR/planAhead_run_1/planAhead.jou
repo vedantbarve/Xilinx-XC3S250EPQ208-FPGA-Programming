@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Jul 29 12:14:57 2024
+# Process ID: 6840
+# Log file: D:/Vedant_42209/USR/planAhead_run_1/planAhead.log
+# Journal file: D:/Vedant_42209/USR/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Vedant_42209/USR/pa.fromNetlist.tcl
+startgroup
+set_property package_pin P203 [get_ports {mode[1]}]
+endgroup
+startgroup
+set_property package_pin P200 [get_ports {mode[1]}]
+endgroup
+startgroup
+set_property package_pin P203 [get_ports {mode[0]}]
+endgroup
+startgroup
+set_property package_pin P181 [get_ports {Pin[3]}]
+endgroup
+startgroup
+set_property package_pin P185 [get_ports {Pin[2]}]
+endgroup
+startgroup
+set_property package_pin P187 [get_ports {Pin[1]}]
+endgroup
+startgroup
+set_property package_pin P186 [get_ports {Pin[0]}]
+endgroup
+startgroup
+set_property package_pin P171 [get_ports {Pout[3]}]
+endgroup
+startgroup
+set_property package_pin P172 [get_ports {Pout[2]}]
+endgroup
+startgroup
+set_property package_pin P168 [get_ports {Pout[1]}]
+endgroup
+startgroup
+set_property package_pin P152 [get_ports {Pout[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  clk]]
+set_property package_pin "" [get_ports [list  rst]]
+set_property package_pin "" [get_ports [list  clk]]
+startgroup
+set_property package_pin P205 [get_ports rst]
+endgroup
+startgroup
+set_property package_pin P192 [get_ports Sin]
+endgroup
+startgroup
+set_property package_pin P179 [get_ports Sout]
+endgroup
+startgroup
+set_property package_pin P206 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin P206 [get_ports clk]
+endgroup
+save_constraints

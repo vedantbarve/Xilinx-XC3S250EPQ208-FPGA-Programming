@@ -1,0 +1,36 @@
+xst -intstyle ise -ifn "D:/Vedant_42209/USR/USR.xst" -ofn "D:/Vedant_42209/USR/USR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-pq208-4 USR.ngc USR.ngd  
+map -intstyle ise -p xc3s250e-pq208-4 -cm area -ir off -pr off -c 100 -o USR_map.ncd USR.ngd USR.pcf 
+par -w -intstyle ise -ol high -t 1 USR_map.ncd USR.ncd USR.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml USR.twx USR.ncd -o USR.twr USR.pcf 
+xst -intstyle ise -ifn "D:/Vedant_42209/USR/USR.xst" -ofn "D:/Vedant_42209/USR/USR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-pq208-4 USR.ngc USR.ngd  
+map -intstyle ise -p xc3s250e-pq208-4 -cm area -ir off -pr off -c 100 -o USR_map.ncd USR.ngd USR.pcf 
+par -w -intstyle ise -ol high -t 1 USR_map.ncd USR.ncd USR.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml USR.twx USR.ncd -o USR.twr USR.pcf 
+xst -intstyle ise -ifn "D:/Vedant_42209/USR/USR.xst" -ofn "D:/Vedant_42209/USR/USR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-pq208-4 USR.ngc USR.ngd  
+xst -intstyle ise -ifn "D:/Vedant_42209/USR/USR.xst" -ofn "D:/Vedant_42209/USR/USR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-pq208-4 USR.ngc USR.ngd  
+map -intstyle ise -p xc3s250e-pq208-4 -cm area -ir off -pr off -c 100 -o USR_map.ncd USR.ngd USR.pcf 
+par -w -intstyle ise -ol high -t 1 USR_map.ncd USR.ncd USR.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml USR.twx USR.ncd -o USR.twr USR.pcf 
+xst -intstyle ise -ifn "D:/Vedant_42209/USR/USR.xst" -ofn "D:/Vedant_42209/USR/USR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc USR.ucf -p xc3s250e-pq208-4 USR.ngc USR.ngd  
+map -intstyle ise -p xc3s250e-pq208-4 -cm area -ir off -pr off -c 100 -o USR_map.ncd USR.ngd USR.pcf 
+par -w -intstyle ise -ol high -t 1 USR_map.ncd USR.ncd USR.pcf 
+xst -intstyle ise -ifn "D:/Vedant_42209/USR/USR.xst" -ofn "D:/Vedant_42209/USR/USR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc USR.ucf -p xc3s250e-pq208-4 USR.ngc USR.ngd  
+map -intstyle ise -p xc3s250e-pq208-4 -cm area -ir off -pr off -c 100 -o USR_map.ncd USR.ngd USR.pcf 
+par -w -intstyle ise -ol high -t 1 USR_map.ncd USR.ncd USR.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc USR.ucf -p xc3s250e-pq208-4 USR.ngc USR.ngd  
+map -intstyle ise -p xc3s250e-pq208-4 -cm area -ir off -pr off -c 100 -o USR_map.ncd USR.ngd USR.pcf 
+par -w -intstyle ise -ol high -t 1 USR_map.ncd USR.ncd USR.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml USR.twx USR.ncd -o USR.twr USR.pcf -ucf USR.ucf 
+bitgen -intstyle ise -f USR.ut USR.ncd 
+xst -intstyle ise -ifn "D:/Vedant_42209/USR/USR.xst" -ofn "D:/Vedant_42209/USR/USR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc USR.ucf -p xc3s250e-pq208-4 USR.ngc USR.ngd  
+map -intstyle ise -p xc3s250e-pq208-4 -cm area -ir off -pr off -c 100 -o USR_map.ncd USR.ngd USR.pcf 
+par -w -intstyle ise -ol high -t 1 USR_map.ncd USR.ncd USR.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml USR.twx USR.ncd -o USR.twr USR.pcf -ucf USR.ucf 
+bitgen -intstyle ise -f USR.ut USR.ncd 

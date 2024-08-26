@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Vedant_42209/ALU4/ALU4_TB_isim_beh.exe" -prj "D:/Vedant_42209/ALU4/ALU4_TB_beh.prj" "work.ALU4_TB" 

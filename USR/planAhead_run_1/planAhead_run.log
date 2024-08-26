@@ -1,0 +1,107 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -3286 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/Vedant_42209/USR/pa.fromNetlist.tcl
+# create_project -name USR -dir "D:/Vedant_42209/USR/planAhead_run_2" -part xc3s250epq208-4
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/Vedant_42209/USR/USR.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/Vedant_42209/USR} }
+# set_property target_constrs_file "USR.ucf" [current_fileset -constrset]
+Adding file 'D:/Vedant_42209/USR/USR.ucf' to fileset 'constrs_1'
+# add_files [list {USR.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s250epq208-4
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design USR.ngc ...
+WARNING:NetListWriters:298 - No output is written to USR.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file USR.edif ...
+ngc2edif: Total memory usage is 4313132 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/USR.data/cache/USR_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/USR.data/cache/USR_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/pq208/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/pq208/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [D:/Vedant_42209/USR/USR.ucf]
+Finished Parsing UCF File [D:/Vedant_42209/USR/USR.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 7c9bcdde
+link_design: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 522.996 ; gain = 101.957
+startgroup
+set_property package_pin P203 [get_ports {mode[1]}]
+endgroup
+startgroup
+set_property package_pin P200 [get_ports {mode[1]}]
+endgroup
+startgroup
+set_property package_pin P203 [get_ports {mode[0]}]
+endgroup
+startgroup
+set_property package_pin P181 [get_ports {Pin[3]}]
+endgroup
+startgroup
+set_property package_pin P185 [get_ports {Pin[2]}]
+endgroup
+startgroup
+set_property package_pin P187 [get_ports {Pin[1]}]
+endgroup
+startgroup
+set_property package_pin P186 [get_ports {Pin[0]}]
+endgroup
+startgroup
+set_property package_pin P171 [get_ports {Pout[3]}]
+endgroup
+startgroup
+set_property package_pin P172 [get_ports {Pout[2]}]
+endgroup
+startgroup
+set_property package_pin P168 [get_ports {Pout[1]}]
+endgroup
+startgroup
+set_property package_pin P152 [get_ports {Pout[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  clk]]
+set_property package_pin "" [get_ports [list  rst]]
+set_property package_pin "" [get_ports [list  clk]]
+startgroup
+set_property package_pin P205 [get_ports rst]
+endgroup
+startgroup
+set_property package_pin P192 [get_ports Sin]
+endgroup
+startgroup
+set_property package_pin P179 [get_ports Sout]
+endgroup
+startgroup
+set_property package_pin P206 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin P206 [get_ports clk]
+endgroup
+save_constraints
