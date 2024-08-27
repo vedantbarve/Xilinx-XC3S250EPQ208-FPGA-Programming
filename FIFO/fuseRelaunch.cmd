@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Vedant_42209/FIFO/FIFO_TB_isim_beh.exe" -prj "D:/Vedant_42209/FIFO/FIFO_TB_beh.prj" "work.FIFO_TB" 

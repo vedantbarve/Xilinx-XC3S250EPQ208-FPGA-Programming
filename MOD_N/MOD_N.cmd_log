@@ -1,0 +1,45 @@
+xst -intstyle ise -ifn "D:/Vedant_42209/MOD_N/MOD_N.xst" -ofn "D:/Vedant_42209/MOD_N/MOD_N.syr" 
+xst -intstyle ise -ifn "D:/Vedant_42209/MOD_N/MOD_N.xst" -ofn "D:/Vedant_42209/MOD_N/MOD_N.syr" 
+xst -intstyle ise -ifn "D:/Vedant_42209/MOD_N/MOD_N.xst" -ofn "D:/Vedant_42209/MOD_N/MOD_N.syr" 
+xst -intstyle ise -ifn "D:/Vedant_42209/MOD_N/MOD_N.xst" -ofn "D:/Vedant_42209/MOD_N/MOD_N.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-pq208-5 MOD_N.ngc MOD_N.ngd  
+map -intstyle ise -p xc3s250e-pq208-5 -cm area -ir off -pr off -c 100 -o MOD_N_map.ncd MOD_N.ngd MOD_N.pcf 
+par -w -intstyle ise -ol high -t 1 MOD_N_map.ncd MOD_N.ncd MOD_N.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MOD_N.twx MOD_N.ncd -o MOD_N.twr MOD_N.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MOD_N.ucf -p xc3s250e-pq208-5 MOD_N.ngc MOD_N.ngd  
+xst -intstyle ise -ifn "D:/Vedant_42209/MOD_N/MOD_N.xst" -ofn "D:/Vedant_42209/MOD_N/MOD_N.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MOD_N.ucf -p xc3s250e-pq208-5 MOD_N.ngc MOD_N.ngd  
+map -intstyle ise -p xc3s250e-pq208-5 -cm area -ir off -pr off -c 100 -o MOD_N_map.ncd MOD_N.ngd MOD_N.pcf 
+par -w -intstyle ise -ol high -t 1 MOD_N_map.ncd MOD_N.ncd MOD_N.pcf 
+xst -intstyle ise -ifn "D:/Vedant_42209/MOD_N/MOD_N.xst" -ofn "D:/Vedant_42209/MOD_N/MOD_N.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MOD_N.ucf -p xc3s250e-pq208-5 MOD_N.ngc MOD_N.ngd  
+map -intstyle ise -p xc3s250e-pq208-5 -cm area -ir off -pr off -c 100 -o MOD_N_map.ncd MOD_N.ngd MOD_N.pcf 
+par -w -intstyle ise -ol high -t 1 MOD_N_map.ncd MOD_N.ncd MOD_N.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MOD_N.twx MOD_N.ncd -o MOD_N.twr MOD_N.pcf -ucf MOD_N.ucf 
+bitgen -intstyle ise -f MOD_N.ut MOD_N.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MOD_N.ucf -p xc3s250e-pq208-5 MOD_N.ngc MOD_N.ngd  
+xst -intstyle ise -ifn "D:/Vedant_42209/MOD_N/MOD_N.xst" -ofn "D:/Vedant_42209/MOD_N/MOD_N.syr" 
+xst -intstyle ise -ifn "D:/Vedant_42209/MOD_N/MOD_N.xst" -ofn "D:/Vedant_42209/MOD_N/MOD_N.syr" 
+xst -intstyle ise -ifn "D:/Vedant_42209/MOD_N/MOD_N.xst" -ofn "D:/Vedant_42209/MOD_N/MOD_N.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MOD_N.ucf -p xc3s250e-pq208-5 MOD_N.ngc MOD_N.ngd  
+map -intstyle ise -p xc3s250e-pq208-5 -cm area -ir off -pr off -c 100 -o MOD_N_map.ncd MOD_N.ngd MOD_N.pcf 
+par -w -intstyle ise -ol high -t 1 MOD_N_map.ncd MOD_N.ncd MOD_N.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MOD_N.twx MOD_N.ncd -o MOD_N.twr MOD_N.pcf -ucf MOD_N.ucf 
+bitgen -intstyle ise -f MOD_N.ut MOD_N.ncd 
+xst -intstyle ise -ifn "D:/Vedant_42209/MOD_N/MOD_N.xst" -ofn "D:/Vedant_42209/MOD_N/MOD_N.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MOD_N.ucf -p xc3s250e-pq208-5 MOD_N.ngc MOD_N.ngd  
+map -intstyle ise -p xc3s250e-pq208-5 -cm area -ir off -pr off -c 100 -o MOD_N_map.ncd MOD_N.ngd MOD_N.pcf 
+par -w -intstyle ise -ol high -t 1 MOD_N_map.ncd MOD_N.ncd MOD_N.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MOD_N.twx MOD_N.ncd -o MOD_N.twr MOD_N.pcf -ucf MOD_N.ucf 
+bitgen -intstyle ise -f MOD_N.ut MOD_N.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MOD_N.ucf -p xc3s250e-pq208-5 MOD_N.ngc MOD_N.ngd  
+map -intstyle ise -p xc3s250e-pq208-5 -cm area -ir off -pr off -c 100 -o MOD_N_map.ncd MOD_N.ngd MOD_N.pcf 
+par -w -intstyle ise -ol high -t 1 MOD_N_map.ncd MOD_N.ncd MOD_N.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MOD_N.twx MOD_N.ncd -o MOD_N.twr MOD_N.pcf -ucf MOD_N.ucf 
+bitgen -intstyle ise -f MOD_N.ut MOD_N.ncd 
+xst -intstyle ise -ifn "D:/Vedant_42209/MOD_N/MOD_N.xst" -ofn "D:/Vedant_42209/MOD_N/MOD_N.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MOD_N.ucf -p xc3s250e-pq208-5 MOD_N.ngc MOD_N.ngd  
+map -intstyle ise -p xc3s250e-pq208-5 -cm area -ir off -pr off -c 100 -o MOD_N_map.ncd MOD_N.ngd MOD_N.pcf 
+par -w -intstyle ise -ol high -t 1 MOD_N_map.ncd MOD_N.ncd MOD_N.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MOD_N.twx MOD_N.ncd -o MOD_N.twr MOD_N.pcf -ucf MOD_N.ucf 
+bitgen -intstyle ise -f MOD_N.ut MOD_N.ncd 

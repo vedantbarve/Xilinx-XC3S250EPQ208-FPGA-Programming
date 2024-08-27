@@ -1,0 +1,497 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: FIFO.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FIFO.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FIFO"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : FIFO
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Vedant_42209\FIFO\FIFO.vhd" into library work
+Parsing entity <FIFO>.
+Parsing architecture <Behavioral> of entity <fifo>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <FIFO> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FIFO>.
+    Related source file is "D:\Vedant_42209\FIFO\FIFO.vhd".
+        depth = 16
+    Found 1-bit register for signal <empty>.
+    Found 8-bit register for signal <memory<1>>.
+    Found 8-bit register for signal <memory<2>>.
+    Found 8-bit register for signal <memory<3>>.
+    Found 8-bit register for signal <memory<4>>.
+    Found 8-bit register for signal <memory<5>>.
+    Found 8-bit register for signal <memory<6>>.
+    Found 8-bit register for signal <memory<7>>.
+    Found 8-bit register for signal <memory<8>>.
+    Found 8-bit register for signal <memory<9>>.
+    Found 8-bit register for signal <memory<10>>.
+    Found 8-bit register for signal <memory<11>>.
+    Found 8-bit register for signal <memory<12>>.
+    Found 8-bit register for signal <memory<13>>.
+    Found 8-bit register for signal <memory<14>>.
+    Found 8-bit register for signal <memory<15>>.
+    Found 8-bit register for signal <data_out>.
+    Found 8-bit register for signal <memory<0>>.
+    Found 32-bit register for signal <readptr>.
+    Found 32-bit register for signal <writeptr>.
+    Found 32-bit register for signal <num_elem>.
+    Found 1-bit register for signal <full>.
+    Found 32-bit adder for signal <readptr[31]_GND_4_o_add_1_OUT> created at line 69.
+    Found 32-bit adder for signal <writeptr[31]_GND_4_o_add_23_OUT> created at line 75.
+    Found 32-bit adder for signal <num_elem[31]_GND_4_o_add_24_OUT> created at line 76.
+    Found 32-bit subtractor for signal <num_elem[31]_GND_4_o_sub_3_OUT<31:0>> created at line 70.
+    Found 8-bit 16-to-1 multiplexer for signal <readptr[3]_memory[15][7]_wide_mux_0_OUT> created at line 68.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 234 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <FIFO> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+# Registers                                            : 22
+ 1-bit register                                        : 2
+ 32-bit register                                       : 3
+ 8-bit register                                        : 17
+# Multiplexers                                         : 5
+ 32-bit 2-to-1 multiplexer                             : 4
+ 8-bit 16-to-1 multiplexer                             : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst - The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+
+Synthesizing (advanced) Unit <FIFO>.
+The following registers are absorbed into counter <readptr>: 1 register on signal <readptr>.
+The following registers are absorbed into counter <writeptr>: 1 register on signal <writeptr>.
+Unit <FIFO> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 170
+ Flip-Flops                                            : 170
+# Multiplexers                                         : 3
+ 32-bit 2-to-1 multiplexer                             : 2
+ 8-bit 16-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <FIFO> ...
+WARNING:Xst:1293 - FF/Latch <readptr_4> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_5> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_6> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_7> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_8> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_9> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_10> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_11> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_12> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_13> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_14> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_15> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_16> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_17> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_18> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_19> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_20> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_21> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_22> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_23> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_24> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_25> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_26> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_27> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_28> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_29> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_30> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <readptr_31> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_4> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_5> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_6> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_7> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_8> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_9> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_10> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_11> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_12> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_13> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_14> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_15> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_16> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_17> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_18> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_19> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_20> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_21> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_22> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_23> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_24> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_25> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_26> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_27> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_28> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_29> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_30> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <writeptr_31> has a constant value of 0 in block <FIFO>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FIFO, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 178
+ Flip-Flops                                            : 178
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : FIFO.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 343
+#      GND                         : 1
+#      INV                         : 34
+#      LUT1                        : 37
+#      LUT2                        : 2
+#      LUT3                        : 1
+#      LUT4                        : 32
+#      LUT5                        : 10
+#      LUT6                        : 61
+#      MUXCY                       : 68
+#      MUXF7                       : 16
+#      MUXF8                       : 8
+#      VCC                         : 1
+#      XORCY                       : 72
+# FlipFlops/Latches                : 178
+#      FDC                         : 33
+#      FDCE                        : 144
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 11
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa7a100tcsg324-2i 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             178  out of  126800     0%  
+ Number of Slice LUTs:                  177  out of  63400     0%  
+    Number used as Logic:               177  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    281
+   Number with an unused Flip Flop:     103  out of    281    36%  
+   Number with an unused LUT:           104  out of    281    37%  
+   Number of fully used LUT-FF pairs:    74  out of    281    26%  
+   Number of unique control sets:        20
+
+IO Utilization: 
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    210    10%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 178   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.104ns (Maximum Frequency: 195.917MHz)
+   Minimum input arrival time before clock: 4.888ns
+   Maximum output required time after clock: 0.834ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.104ns (frequency: 195.917MHz)
+  Total number of paths / destination ports: 23973 / 194
+-------------------------------------------------------------------------
+Delay:               5.104ns (Levels of Logic = 10)
+  Source:            num_elem_0 (FF)
+  Destination:       empty (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: num_elem_0 to empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.361   0.439  num_elem_0 (num_elem_0)
+     LUT3:I1->O            1   0.097   0.000  Mmux_n0168_rs_lut<0> (Mmux_n0168_rs_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Mmux_n0168_rs_cy<0> (Mmux_n0168_rs_cy<0>)
+     XORCY:CI->O           2   0.370   0.360  Mmux_n0168_rs_xor<1> (n0168<1>)
+     LUT1:I0->O            1   0.097   0.000  Madd_num_elem[31]_GND_4_o_add_24_OUT_cy<1>_rt (Madd_num_elem[31]_GND_4_o_add_24_OUT_cy<1>_rt)
+     MUXCY:S->O            1   0.353   0.000  Madd_num_elem[31]_GND_4_o_add_24_OUT_cy<1> (Madd_num_elem[31]_GND_4_o_add_24_OUT_cy<1>)
+     XORCY:CI->O           1   0.370   0.355  Madd_num_elem[31]_GND_4_o_add_24_OUT_xor<2> (num_elem[31]_GND_4_o_add_24_OUT<2>)
+     LUT4:I3->O            2   0.097   0.621  Mmux_num_elem[31]_num_elem[31]_mux_42_OUT231 (num_elem[31]_num_elem[31]_mux_42_OUT<2>)
+     LUT6:I2->O            2   0.097   0.360  GND_4_o_num_elem[31]_equal_48_o<31>12 (GND_4_o_num_elem[31]_equal_48_o<31>12)
+     LUT6:I5->O            1   0.097   0.571  GND_4_o_num_elem[31]_equal_48_o<31>13_SW0 (N10)
+     LUT6:I3->O            1   0.097   0.000  GND_4_o_num_elem[31]_equal_49_o<31>1 (GND_4_o_num_elem[31]_equal_49_o)
+     FDC:D                     0.008          full
+    ----------------------------------------
+    Total                      5.104ns (2.397ns logic, 2.707ns route)
+                                       (47.0% logic, 53.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2228 / 484
+-------------------------------------------------------------------------
+Offset:              4.888ns (Levels of Logic = 11)
+  Source:            rd_en (PAD)
+  Destination:       empty (FF)
+  Destination Clock: clk rising
+
+  Data Path: rd_en to empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.001   0.583  rd_en_IBUF (rd_en_IBUF)
+     LUT3:I0->O            1   0.097   0.000  Mmux_n0168_rs_lut<0> (Mmux_n0168_rs_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Mmux_n0168_rs_cy<0> (Mmux_n0168_rs_cy<0>)
+     XORCY:CI->O           2   0.370   0.360  Mmux_n0168_rs_xor<1> (n0168<1>)
+     LUT1:I0->O            1   0.097   0.000  Madd_num_elem[31]_GND_4_o_add_24_OUT_cy<1>_rt (Madd_num_elem[31]_GND_4_o_add_24_OUT_cy<1>_rt)
+     MUXCY:S->O            1   0.353   0.000  Madd_num_elem[31]_GND_4_o_add_24_OUT_cy<1> (Madd_num_elem[31]_GND_4_o_add_24_OUT_cy<1>)
+     XORCY:CI->O           1   0.370   0.355  Madd_num_elem[31]_GND_4_o_add_24_OUT_xor<2> (num_elem[31]_GND_4_o_add_24_OUT<2>)
+     LUT4:I3->O            2   0.097   0.621  Mmux_num_elem[31]_num_elem[31]_mux_42_OUT231 (num_elem[31]_num_elem[31]_mux_42_OUT<2>)
+     LUT6:I2->O            2   0.097   0.360  GND_4_o_num_elem[31]_equal_48_o<31>12 (GND_4_o_num_elem[31]_equal_48_o<31>12)
+     LUT6:I5->O            1   0.097   0.571  GND_4_o_num_elem[31]_equal_48_o<31>13_SW0 (N10)
+     LUT6:I3->O            1   0.097   0.000  GND_4_o_num_elem[31]_equal_49_o<31>1 (GND_4_o_num_elem[31]_equal_49_o)
+     FDC:D                     0.008          full
+    ----------------------------------------
+    Total                      4.888ns (2.037ns logic, 2.851ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              0.834ns (Levels of Logic = 1)
+  Source:            full (FF)
+  Destination:       fifo_full (PAD)
+  Source Clock:      clk rising
+
+  Data Path: full to fifo_full
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             54   0.361   0.473  full (full)
+     OBUF:I->O                 0.000          fifo_full_OBUF (fifo_full)
+    ----------------------------------------
+    Total                      0.834ns (0.361ns logic, 0.473ns route)
+                                       (43.3% logic, 56.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.104|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 22.60 secs
+ 
+--> 
+
+Total memory usage is 4996216 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   57 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

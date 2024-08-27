@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Aug 19 05:07:13 2024
+# Process ID: 12504
+# Log file: D:/Vedant_42209/MOD_N/planAhead_run_4/planAhead.log
+# Journal file: D:/Vedant_42209/MOD_N/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Vedant_42209/MOD_N/pa.fromNetlist.tcl
+startgroup
+set_property package_pin P165 [get_ports {Q[4]}]
+endgroup
+startgroup
+set_property package_pin P167 [get_ports {Q[3]}]
+endgroup
+startgroup
+set_property package_pin P163 [get_ports {Q[2]}]
+endgroup
+startgroup
+set_property package_pin P164 [get_ports {Q[1]}]
+endgroup
+startgroup
+set_property package_pin P161 [get_ports {Q[0]}]
+endgroup
+startgroup
+set_property package_pin P172 [get_ports dir]
+endgroup
+startgroup
+set_property package_pin P184 [get_ports rst]
+endgroup
+save_constraints

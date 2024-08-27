@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Aug 19 05:14:09 2024
+# Process ID: 12356
+# Log file: D:/Vedant_42209/MOD_N/planAhead_run_5/planAhead.log
+# Journal file: D:/Vedant_42209/MOD_N/planAhead_run_5/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Vedant_42209/MOD_N/pa.fromNetlist.tcl
+startgroup
+set_property package_pin P179 [get_ports dir]
+endgroup
+save_constraints
